@@ -1,0 +1,40 @@
+/* *applies to all elements in webpage*/
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box-item-nav {
+    flex-grow: 1; /* how much space should element take up?*/
+    flex-shrink: 1; /* how much should element shrink?*/
+    flex-basis: auto;
+}
+
+.listing-image {
+    flex: 3 1 400px;
+}
+
+.listing-text {
+    flex: 1 1 40rem;
+}
+
+.box-color {
+    flex-grow: 1; /* how much space should element take up?*/
+    flex-shrink: 1; /* how much should element shrink?*/
+    flex-basis: auto;
+}
+
+.image-box {
+    padding: 0;
+}
+
+@media screen and (min-width: 50em) {
+    .box-item-image {
+        order: 2;
+    }
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>P01 - Style Guide Template</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <h1>Nosotras Books</h1>
+
+      <p>Using the template from the lab.</p>
+
+
+      <nav class="box nav-main">        
+        <a href="#interactive_elements" class="button-nav box-item-nav">Interactive Elements</a>
+        <a href="#text_elements" class="button-nav box-item-nav">Text Elements</a>
+        <a href="#combined_elements" class="button-nav box-item-nav">Combined Elements</a>
+        <a href="#product_listing.html" class="button-nav box-item-nav">Product Listing Template</a>
+        <a href="#checkout.html" class="button-nav box-item-nav">Checkout Template</a>
+        <a href="#citations" class="button-nav box-item-nav">Citations</a>
+        <a href="#basic_branding_ideas" class="button-nav box-item-nav">Basic Branding Ideas</a>
+      </nav>
+    </header>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">
+        <h3>In-text link</h3>
+        <a target="_blank" href="https://www.instagram.com/nooroongji.ca/">Follow us on Instagram!</a>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+        <nav class="box nav-main">        
+          <a href="#interactive_elements" class="button-nav box-item-nav">Interactive Elements</a>
+          <a href="#text_elements" class="button-nav box-item-nav">Text Elements</a>
+          <a href="#combined_elements" class="button-nav box-item-nav">Combined Elements</a>
+          <a href="#product_listing.html" class="button-nav box-item-nav">Product Listing Template</a>
+          <a href="#checkout.html" class="button-nav box-item-nav">Checkout Template</a>
+          <a href="#citations" class="button-nav box-item-nav">Citations</a>
+          <a href="#basic_branding_ideas" class="button-nav box-item-nav">Basic Branding Ideas</a>
+        </nav>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button" href="#">Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+                <form>
+                    <input type="submit" id="submit" value="Submit" class="button">
+                </form>
+                <form>
+                    <input type="reset" id="reset" value="Reset" class="button">
+                </form> 
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+            <form>
+               Enter text here <input type="text" id="text" class="text-entry">
+            </form>
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+            <form>
+                Radio Button <input type="radio" id="radio">
+            </form>
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <a target="_blank" href="https://bookoutlet.ca/products/9780062972859B/when-lola-visits"><img src="images/whenLolaVisits.jpeg" alt="When Lola Visits by Michelle Sterling" width="200rem" class="link-img"></a>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+            <h1 class=".header1">h1 header</h1>
+            <h2 class=".header2">h2 header</h2>
+            <h3 class=".header3">h3 header</h3>
+            <h4 class=".header4">h4 header</h4>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <p>This is the paragraph styling Nosotras will use for any large bodies of text.</p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+          <ol type="1">
+            <li>Fiction Books</li>
+            <li>Non-Fiction Books</li>
+            <li>Merchandise</li>
+           </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+          <nav class="box nav-main">    
+            <a href="#interactive_elements" class="button-nav box-item-nav">Interactive Elements</a>
+            <a href="#text_elements" class="button-nav box-item-nav">Text Elements</a>
+            <a href="#combined_elements" class="button-nav box-item-nav">Combined Elements</a>
+            <a href="#product_listing.html" class="button-nav box-item-nav">Product Listing Template</a>
+            <a href="#checkout.html" class="button-nav box-item-nav">Checkout Template</a>
+            <a href="#citations" class="button-nav box-item-nav">Citations</a>
+            <a href="#basic_branding_ideas" class="button-nav box-item-nav">Basic Branding Ideas</a>
+          </nav>
+      </section>
+
+
+      <section class="element">
+        <h3>Product Listing</h3>
+
+        <div class="products">
+        <!-- Product 1 -->
+        <div class="listing">
+            <div class="image-box">
+              <div class="images"><img src="images/yellowface.jpeg" alt="Yellowface book cover" width="200rem"></div>
+            </div>
+              <div class="text-box">
+                <h2 class="item">Yellowface</h2>
+                <h3 class="price">$24.99</h3>
+                <button type="button" name="item-1-button" id="item-1-button" class="button">Add to Cart</button>
+              </div>
+            </div>
+
+
+          <!-- Product 2 -->
+          <div class="listing">
+              <div class="image-box">
+                <div class="images"><img src="images/yellowface.jpeg" alt="Yellowface book cover" width="200rem"></div>
+              </div>
+                <div class="text-box">
+                  <h2 class="item">Yellowface</h2>
+                  <h3 class="price">$24.99</h3>
+                  <button type="button" name="item-1-button" id="item-1-button" class="button">Add to Cart</button>
+                </div>
+              </div>
+
+            <!-- Product 3 -->
+            <div class="listing">
+                <div class="image-box">
+                  <div class="images"><img src="images/yellowface.jpeg" alt="Yellowface book cover" width="200rem"></div>
+                </div>
+                  <div class="text-box">
+                    <h2 class="item">Yellowface</h2>
+                    <h3 class="price">$24.99</h3>
+                    <button type="button" name="item-1-button" id="item-1-button" class="button">Add to Cart</button>
+                  </div>
+                </div>
+
+              <!-- Product 4 -->
+              <div class="listing">
+                <div class="image-box">
+                  <div class="images"><img src="images/yellowface.jpeg" alt="Yellowface book cover" width="200rem"></div>
+                </div>
+                  <div class="text-box">
+                    <h2 class="item">Yellowface</h2>
+                    <h3 class="price">$24.99</h3>
+                    <button type="button" name="item-1-button" id="item-1-button" class="button">Add to Cart</button>
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+
+      <section class="element">
+        <h3>Payment Form</h3>
+          <h4>Payment Details</h4>
+          <p>*Indicates required field</p>
+
+          <form>
+              <input type="radio" id="ship"> Ship to an address
+          </form><br>
+
+          <form>
+              <input type="radio" id="pickup"> Pick up in store
+          </form><br>
+
+          <form>
+            First Name* <input type="text" id="first-name">
+          </form><br>
+
+          <form>
+            Last Name* <input type="text" id="last-name">
+          </form><br>
+
+          <h3>Billing Address</h3>
+          <form>
+            Country* <input type="text" id="country">
+          </form> <br>
+
+          <form>
+            Address* <input type="text" id="address">
+          </form><br>
+
+          <form>
+            City* <input type="text" id="city">
+          </form><br>
+
+          <form>
+            Province* <input type="text" id="province">
+          </form><br>
+
+          <form>
+              Postal Code* <input type="text" id="postal-code">
+          </form><br>
+
+          <form>
+              Phone Number* <input type="tel" id="phone">
+          </form><br>
+
+          <form>
+              Email Address* <input type="email" id="email">
+          </form><br>
+
+          <form>
+              <input type="radio" id="gift"> Gift Card
+          </form><br>
+
+          <form>
+              <input type="radio" id="credit"> Credit Card
+          </form><br>
+
+          <h3>(For gift card)</h3>
+          <form>
+            Card Number* <input type="text" id="card-number-gift"> 
+          </form><br>
+
+          <form>
+              PIN* <input type="text" id="pin">
+          </form><br>
+
+          <form>
+              <input type="submit" id="apply" value="Apply" class="button">
+          </form>
+
+          <h3>(For credit card)</h3>
+          
+          <form>
+              Name on Card* <input type="text" id="card-name">
+          </form><br>
+
+          <form>
+            Card Number* <input type="text" id="card-number">
+          </form><br>
+
+          <form>
+              Expiry Date (MM/YY)* <input type="text" id="expiry">
+          </form><br>
+
+          <form>
+            CVV/CVC* <input type="text" id="cvv-cvc">
+          </form><br>
+
+          <form>
+            <input type="submit" id="proceed" value="Proceed to Checkout" class="button">
+          </form><br>
+
+          <form>
+            <input type="reset" id="reset-payment" value="Reset Payment Details" class="button">
+          </form> 
+        </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+         <!--https://blog.hubspot.com/website/make-a-table-in-html#:~:text=To%20make%20a%20table%20in%20HTML%2C%20use%20the,tag%20defines%20the%20table%20header.-->
+         <table>
+          <tr>
+              <th>Product Name</th>
+              <th>Author</th>
+              <th>Type</th>
+              <th>Price</th>
+          </tr>
+          <tr>
+              <td>Yellowface</td>
+              <td>R.F. Kuang</td>
+              <td>Trade Paperback</td>
+              <td>$24.99</td>
+          </tr>
+          <tr>
+              <td>When Lola Visits</td>
+              <td>Michelle Sterling</td>
+              <td>Hardcover</td>
+              <td>$17.99</td>
+          </tr>
+          <tr>
+              <td>The Fran Lebowitz Reader</td>
+              <td>Fran Lebowitz</td>
+              <td>Trade Paperback</td>
+              <td>$23.99</td>
+          </tr>
+      </table>
+      </section>
+      
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section id="basic_branding_ideas">
+      <h2>Basic Branding Ideas</h2>
+      <h3>What Nosotras does</h3>
+            <p>Nosotras is a multicultural bookstore that specializes in literary works that highlight the cultural diversity in Vancouver. There are books in different languages, books with recipes waiting to be discovered, and picture books about interesting cultures that are not talked about enough in modern day media. We have a brick-and-mortar location in Vancouver, but we also run an e-commerce version of the store to increase access to our curated collection of multicultural books.</p>
+        <h3>Who is Nosotras to potential customer</h3>
+            <p>Nosotras is a haven of multiculutral knowledge waiting to be discovered by potential customers. We provide customers with the means of becoming a well-rounded, thoughtfully-educated individual. It is up to the customers to engage with our books to become more mindful and empathetic members of society.</p>
+        <h3>Why might Nosotras entice someone to purchase a product</h3>
+            <p>Nosotras is a bookstore with a unique mission to engage with and introduce underrepresented cultures to the general public. We aim to peak customers' curosity with our thought-provoking and exciting books. Our ambitious mission to create a more educated and welcoming society requires support from those in favour of our mission. The buying power of our supporters is important to Nosotras as it is an indicator that we should continue running the business because our mission resonates with community members. People who purchase from Nosotras demonstrate a drive to learn—an important quality to have for someone who wants to become knowledgeable regarding multiculturalism.</p>
+    </section>
+
+    <section id="brand_components">
+      <h2>Brand Components</h2>
+      <h3>Fonts</h3>
+          <img src="fonts.png" alt="Nosotras' fonts" width="600">
+      <h3>Colour Palette</h3>
+          <!-- <img src="colours.png" alt="Nosotras' colours" width="600"> -->
+          <div class="green box-color"><h4>Forest Green</h4>#0F4F28</div>
+          <div class="pink box-color"><h4>Pretty in Pink</h4>#F5CED5</div>
+          <div class="red box-color"><h4>Burnt Sand</h4>#C64A2D</div>
+          <div class="cream box-color"><h4>Library Pages</h4>#F2E6D8</div>
+          <div class="orange box-color"><h4>Autumn Shelves</h4>#CC6E00</div>
+      <h3>Imagery and Art Direction</h3>
+          <!-- <img src="imagery.png" alt="Nosotras' imagery and art direction" width="600"> -->
+          <img src="images/woman.png" alt="Painting of woman laying head on the table" width="200rem">
+          <img src="images/bookstore.png" alt="Interior of Nosotras bookstore" width="200rem">
+          <img src="images/flowers.png" alt="Painting of a bouquet of flowers in a vase" width="200rem">
+          <img src="images/garden.png" alt="Community garden poster hung around the shop" width="200rem">
+    </section>
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+      </ul>
+
+    </section>
+
+  </body>
+</html>

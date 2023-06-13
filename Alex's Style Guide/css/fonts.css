@@ -1,0 +1,13 @@
+@font-face{
+    font-family: 'PPNeueMontreal';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/PPNeueMontreal-Book.otf) format('otf');
+}
+
+@font-face{
+    font-family: 'PPNeueMontreal';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../fonts/PPNeueMontreal-Bold.otf) format('otf');
+}
