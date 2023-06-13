@@ -1,0 +1,40 @@
+/* 
+code from lab 
+
+all fonts from google fonts
+*/
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight:900;
+    font-style: normal;
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'AnonymousPro';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/AnonymousPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'AnonymousPro';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../fonts/AnonymousPro-Bold.ttf);
+}
