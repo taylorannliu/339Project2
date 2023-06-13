@@ -1,0 +1,137 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+body {
+  font-family: 'CircularStd';
+  padding: 2rem;
+}
+
+
+p, ol{
+  font-family: 'Duplicate-Sans';
+  margin:0;
+}
+
+.Circular{
+  font-family: 'CircularStd';
+  font-size: 2rem;
+}
+
+.circular-txt{
+  font-family: 'CircularStd';
+}
+
+.Duplicate-sans{
+  font-family: 'Duplicate-Sans';
+  font-size: 2rem;
+}
+
+
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+}
+
+
+
+section h3 {
+  margin-bottom: 0;
+}
+
+h5{
+  margin: 0 10px;
+}
+
+section p {
+  margin-top: 0;
+}
+
+img {
+	height: auto; 
+	max-width: 100%;
+	border: 1px solid black; 
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+  font-size: 0.75rem;
+  font-family: 'Duplicate-Sans';
+	font-style: italic;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: rgb(143,168,245);
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #999;
+}
+
+a {
+	color: rgb(245,165,130); 
+	transition: color 0.5s;
+}
+
+a:active, a:hover, a:focus {
+	color: rgb(50,0,0); 
+	text-decoration: none;
+}
+
+img:hover, img:focus, img:active{
+  opacity: 75%;
+  transition: opacity 0.25s ease-out;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+input:hover, input:active{
+  background-color: rgb(143,168,245);
+  opacity: 75%;
+  color: white;
+}
+
+textarea:hover, input:active{
+  background-color: rgb(143,168,245);
+  opacity: 75%;
+  color: white;
+}
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+.nav-main-item {
+	display: inline-block;
+	color: white;
+	background-color: rgb(42,107,65);
+	font-size: 1.5rem;
+	padding: 0.25rem 0.5rem;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+  margin: 2px;
+}
+
+.nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
+	color: white;
+	background-color: rgb(50,50,50);
+}
+

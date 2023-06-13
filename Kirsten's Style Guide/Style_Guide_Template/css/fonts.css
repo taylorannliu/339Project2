@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'CircularStd';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: 'Duplicate-Sans';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/DuplicateSans-Regular-Trial.otf);
+}
