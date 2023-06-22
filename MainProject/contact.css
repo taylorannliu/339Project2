@@ -1,0 +1,14 @@
+textarea {
+    border-radius: .5rem;
+    border-width: .15rem;
+}
+
+textarea:hover, textarea:focus, textarea:active {
+    border-color: #EC5454;
+    background-color: #AAD6FF;
+}
+
+.contact {
+    padding: 1rem;
+    width: 50rem;
+}
