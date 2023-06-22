@@ -14,7 +14,7 @@ section {
     margin: 1rem 8% 4rem;
 }
 
-/* header and navigation related */
+/* header and navigation related moved to separate file
 header {
     display: flex;
     flex-wrap: nowrap;
@@ -37,7 +37,7 @@ header {
     align-items: center;
 }
 
-/*media query code learned from: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+
 @media only screen and (max-width: 1420px) {
     .navchild {
         flex-direction: column-reverse;
@@ -71,7 +71,7 @@ nav > a:hover:not(.selectednav), nav > a:focus:not(.selectednav), nav > a:active
     color: #FFF;
 }
 
-
+*/
 
 /* text elements */
 h1 {
