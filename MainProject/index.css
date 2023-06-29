@@ -1,11 +1,12 @@
 .home {
     background-color: #FFF;
     padding: 1rem;
-    width: 60rem;
+    width: 80%;
     border-style: solid;
     border-color: #000;
     border-width: .2rem;
     margin-bottom: 2rem;
+    margin-right: 0;
 }
 
 .homeImg > img {
@@ -14,6 +15,7 @@
     border-width: .2rem;
 }
 
+/*
 @media screen and (max-width: 1200px) {
     .home {
         width: 50rem;
@@ -25,3 +27,4 @@
         width: 42rem;
     }
 }
+*/

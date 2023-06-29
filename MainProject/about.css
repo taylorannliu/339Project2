@@ -1,7 +1,9 @@
 .about {
     background-color: #FFF;
     padding: 1rem;
-    width: 50rem;
+    width: 90%;
+    margin: auto;
+    margin-right: 0;
     border-style: solid;
     border-color: #000;
     border-width: .2rem;
