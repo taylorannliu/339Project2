@@ -3,13 +3,13 @@
 
     <head>
         <meta charset="utf-8">
-        <title>About</title>
+        <title>Live Poultry</title>
 
         <link href="style.css" rel="stylesheet">
         <link href="fonts.css" rel="stylesheet">
         <link href="normalize.css" rel="stylesheet">
         <link href="navbar.css" rel="stylesheet">
-        <link href="contact.css" rel="stylesheet">
+        <link href="cart.css" rel="stylesheet">
     </head>
 
     <body>
@@ -17,123 +17,67 @@
             <h1 class="headingchild"><a href="index.html">PoultryPal</a></h1>
 
             <nav class="navchild">
-                <a class="selectednav" href="cart.html"><span><img src="images/carticon.png" alt="cart icon" width="60vw"></span></a>
-                <a href="contact.html">Contact</a>
-                <a href="blog.html">Blog</a>
-                <a href="about.html">About</a>
-                <a href="eggs.html">Eggs</a>
-                <a href="live poultry.html">Live Poultry</a>
+              <a class="selectednav" href="cart.html"><span><img src="images/carticon.png" alt="cart icon" width="60vw"></span></a>
+              <a href="contact.html">Contact</a>
+              <a href="blog.html">Blog</a>
+              <a href="about.html">About</a>
+              <a href="eggs.html">Eggs</a>
+              <a href="live poultry.html">Live Poultry</a>
             </nav>
         </header>
 
-        <section>
-            <div class="Payment">
-                <!--form code reference: https://learn.shayhowe.com/html-css/building-forms/-->
-                <section>
-                    <h1>Payment Form</h1>
-                    <!--form code reference: https://learn.shayhowe.com/html-css/building-forms/-->
-                    <form>
-                      <fieldset> <!-- code referenced: https://html5-tutorial.net/forms/fieldset/-->
-                        <legend>Order Details</legend>
-                        <p>How would you like to receive your order?</p>
-                        
-                        <label class = radiolabel>
-                          Home Delivery
-                          <input type="radio" id="delivery">
-                        </label>
-                        <br>
-                        <label class = radiolabel>
-                          In-store pickup
-                          <input type="radio" id="pickup">
-                        </label>
-                      </fieldset>
-                      <br>
-                      <fieldset>
-                        <legend>Customer Details</legend>
-                        <label>
-                          First Name
-                          <input type="text" id="firstname">
-                        </label>
-                        <br>
-                        <label>
-                          Last Name
-                          <input type="text" id="lastname">
-                        </label>
-                        <br>
-                        <label>
-                          Street Name
-                          <input type="text" id="streetname">
-                        </label>
-                        <br>
-                        <label>
-                          City
-                          <input type="text" id="city">
-                        </label>
-                        <br>
-                        <label>
-                          Province
-                          <!--dropdown code reference: https://www.w3schools.com/tags/tag_select.asp -->
-                          <select id="province">
-                            <option value="AB">AB</option>
-                            <option value="AB">BC</option>
-                            <option value="AB">MB</option>
-                            <option value="AB">NB</option>
-                            <option value="AB">NL</option>
-                            <option value="AB">NT</option>
-                            <option value="AB">NS</option>
-                            <option value="AB">NU</option>
-                            <option value="AB">ON</option>
-                            <option value="AB">PE</option>
-                            <option value="AB">QC</option>
-                            <option value="AB">SK</option>
-                            <option value="AB">YT</option>
-                          </select>
-                        </label>
-                        <br>
-                        <label>
-                          Postal Code
-                          <input type="text" id="postalCode">
-                        </label>
-                      </fieldset>
-                      <br>
+        <section >
+            <h1>Take Home Cart</h1>
             
-                      <fieldset>
-                        <legend>Payment Details</legend>
-                        <label>
-                          First Name
-                          <input type="text" id="firstnamepay">
-                        </label>
-                        <br>
-                        <label>
-                          Last Name
-                          <input type="text" id="lastnamepay">
-                        </label>
-                        <br>
-                        <label>
-                          Card Number
-                          <input type="text" id="cardnumber">
-                        </label>
-                        <br>
-                        <label>
-                          Expiry Date
-                          <input type="text" id="expiry">
-                        </label>
-                        <br>
-                        <label>
-                          CVV
-                          <input type="text" id="cvv">
-                        </label>
-                      </fieldset>
-      
-                      <br>
-                      <input class= "buttonmain" type="submit" value="Place Order">
-                    </form>
-            
-                  </section>
-            </section>  
+            <div class="listingscontainerincart">
+                <div class="product">
+                    <div class="productimage">
+                        <img src="images/silkieEgg.png" alt="silkie eggs" width="100%">
+                    </div>
+                    <h3>Silkie<img src="images/hatchingEggIcon.png" alt="hatching egg icon" width=10%></h3>
+                    
+                    <h4><span>Medium</span></h4>
+                    <div class="priceandcart">
+                        <h3>$4.99</h3>
+                        <!-- <a class="buttonsecondary" href="silkieEggListing.html">Learn More</a> -->
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="productimage">
+                        <img src="images/plymouthRockEgg.png" alt="plymouth rock eggs" width="100%">
+                    </div>
+                    <h3>Plymouth Rock<img src="images/hatchingEggIcon.png" alt="hatching egg icon" width=10%></h3>
+                    <h4><span>Medium-Large</span></h4>
+                    <div class="priceandcart">
+                        <h3>$1.99</h3>
+                        <!-- <a class="buttonsecondary" href="silkieEggListing.html">Learn More</a> -->
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="productimage">
+                        <img src="images/ostritchEgg.png" alt="beeg egg" width="100%">
+                    </div>
+                    <h3>Ostrich<img src="images/hatchingEggIcon.png" alt="hatching egg icon" width=10%></h3>
+                    <h4><span>HUGE</span></h4>
+                    <div class="priceandcart">
+                        <h3>$24.99</h3>
+                        <!-- <a class="buttonsecondary" href="silkieEggListing.html">Learn More</a> -->
+                    </div>
+                </div>
+
+                <!-- <h3>Total: $31.97</h3>
+                <a class="buttonmain" href="checkout.html">Checkout </a> -->
+
             </div>
 
-            
+            <div class="listingInfoCluster">
+                    <h3 class="totalprice">Total: $37.98</h3>
+                    <a class="buttonmain" href="checkout.html">Checkout </a>
+            </div>
+
+        </section>
 
     </body>
 
