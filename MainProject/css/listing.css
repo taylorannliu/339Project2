@@ -19,6 +19,16 @@
     margin-bottom: 3rem;
 }
 
+
+.listingPagePrice {
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 2rem;
+    -webkit-text-stroke: #000;
+    -webkit-text-stroke-width: .1rem;    
+}
+
 @media only screen and (max-width: 1000px) {
     .individualListing {
         flex-direction: column;
@@ -40,6 +50,10 @@
 
 .reviewText {
     flex: 4;
+}
+
+.reviewText > h3 > img {
+    vertical-align: middle;
 }
 
 .reviewerInfo {
