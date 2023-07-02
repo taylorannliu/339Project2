@@ -15,6 +15,7 @@ header > a {
     font-size: 2.5rem;
     -webkit-text-stroke-width: .13rem;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .headingchild > a {
@@ -22,6 +23,7 @@ header > a {
     color: #FFF;
     -webkit-text-stroke: #000;
     -webkit-text-stroke-width: .13rem;
+    vertical-align: middle;
 }
 
 .navchild {
@@ -63,9 +65,29 @@ nav > a:hover:not(.selectednav), nav > a:focus:not(.selectednav), nav > a:active
 }
 
 /*media query code learned from: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
-@media only screen and (max-width: 1018px) {
+@media only screen and (max-width: 980px) {
+    .headingchild > a {
+        font-size: 1.6rem;
+        -webkit-text-stroke-width: .1rem;
+    }
+
+    nav > a {
+        font-size: .8rem;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 775px) {
     .navchild {
         flex-direction: column-reverse;
         align-items: end;
+    }
+
+    .headingchild {
+        flex: 1;
+    }
+
+    .navchild {
+        flex: 6;
     }
 }
