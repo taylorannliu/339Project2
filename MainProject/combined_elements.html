@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Combined Elements</title>
+
+        <link href="css/styleGuide.css" rel="stylesheet">
+        <link href="css/fonts.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="headingchild">PoultryPal Style Guide</h1>
+
+            <nav class="navchild">
+              <a href="products_page.html">Product Listings</a>
+              <a class = selectednav href="combined_elements.html">Combined Elements</a>
+              <a href="text_elements.html">Text Elements</a>
+              <a href="interactive_elements.html">Interactive Elements</a>
+            </nav>
+        </header>
+
+        <section>
+          <h1>Main Navigation</h1>
+          <p class="description">How the main navigation bar looks. In this example, the user is on the Live Poultry page</p>
+          <nav>
+            <a class="selectednav" href="">Live Poultry</a>
+            <a href=""> Eggs</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Contact Us</a>
+          </nav>
+        </section>
+        
+        <section>
+      
+      
+            <section>
+              <h1>Product Listing (minimized)</h1>
+              <div class="product">
+                <div class="productimage">
+                    <img src="images/hennifer.png" alt="a polite brown hen" width="100%">
+                </div>
+                <h3>Hennifer</h3>
+                <h4><span>Fancy Brown</span></h4>
+                <div class="priceandcart">
+                    <h3>$24.99</h3>
+                    <a class="buttonsecondary" href="example_listing.html">Learn More</a>
+                </div>
+            </div>
+            </section>
+      
+            <section>
+              <h1>Payment Form</h1>
+              <!--form code reference: https://learn.shayhowe.com/html-css/building-forms/-->
+              <form>
+                <fieldset> <!-- code referenced: https://html5-tutorial.net/forms/fieldset/-->
+                  <legend>Order Details</legend>
+                  <p>How would you like to receive your order?</p>
+                  
+                  <label class = radiolabel>
+                    Home Delivery
+                    <input type="radio" id="delivery">
+                  </label>
+                  <br>
+                  <label class = radiolabel>
+                    In-store pickup
+                    <input type="radio" id="pickup">
+                  </label>
+                </fieldset>
+                <br>
+                <fieldset>
+                  <legend>Customer Details</legend>
+                  <label>
+                    First Name
+                    <input type="text" id="firstname">
+                  </label>
+                  <br>
+                  <label>
+                    Last Name
+                    <input type="text" id="lastname">
+                  </label>
+                  <br>
+                  <label>
+                    Street Name
+                    <input type="text" id="streetname">
+                  </label>
+                  <br>
+                  <label>
+                    City
+                    <input type="text" id="city">
+                  </label>
+                  <br>
+                  <label>
+                    Province
+                    <!--dropdown code reference: https://www.w3schools.com/tags/tag_select.asp -->
+                    <select id="province">
+                      <option value="AB">AB</option>
+                      <option value="AB">BC</option>
+                      <option value="AB">MB</option>
+                      <option value="AB">NB</option>
+                      <option value="AB">NL</option>
+                      <option value="AB">NT</option>
+                      <option value="AB">NS</option>
+                      <option value="AB">NU</option>
+                      <option value="AB">ON</option>
+                      <option value="AB">PE</option>
+                      <option value="AB">QC</option>
+                      <option value="AB">SK</option>
+                      <option value="AB">YT</option>
+                    </select>
+                  </label>
+                  <br>
+                  <label>
+                    Postal Code
+                    <input type="text" id="postalCode">
+                  </label>
+                </fieldset>
+                <br>
+      
+                <fieldset>
+                  <legend>Payment Details</legend>
+                  <label>
+                    First Name
+                    <input type="text" id="firstnamepay">
+                  </label>
+                  <br>
+                  <label>
+                    Last Name
+                    <input type="text" id="lastnamepay">
+                  </label>
+                  <br>
+                  <label>
+                    Card Number
+                    <input type="text" id="cardnumber">
+                  </label>
+                  <br>
+                  <label>
+                    Expiry Date
+                    <input type="text" id="expiry">
+                  </label>
+                  <br>
+                  <label>
+                    CVV
+                    <input type="text" id="cvv">
+                  </label>
+                </fieldset>
+
+                <br>
+                <input class= "buttonmain" type="submit" value="Place Order">
+              </form>
+      
+            </section>
+      
+            <section id="checkout">
+              <h1>Checkout Cart</h1>
+              <div id="cart">
+                <h2>Chicken Basket</h2>
+                <div class="cartitem">
+                  <div class="product">
+                    <div class="productimage">
+                        <img src="images/mobychick.png" alt="a fuzzy grey chick" width="100%">
+                    </div>
+                    <h3>Moby Chick</h3>
+                    <h4><span>Plymouth Rock</span></h4>
+                  </div>
+                  <h3>$12.99</h3>
+                </div>
+                
+                <div class="cartitem">
+                  <div class="product">
+                    <div class="productimage">
+                        <img src="images/hennifer.png" alt="a polite brown hen" width="100%">
+                    </div>
+                    <h3>Hennifer</h3>
+                    <h4><span>Fancy Brown</span></h4>
+                  </div>
+                  <h3>$24.99</h3>
+                </div>
+
+                <h3>Total: $37.98</h3>
+                <button class="buttonmain">Place Order</button>
+              </div>
+            </section>
+      
+          </section>
+</html>
