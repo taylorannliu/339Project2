@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
         <meta charset="utf-8">
         <title>Combined Elements</title>
 
-        <link href="css/styleGuide.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/navbar.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
     </head>
@@ -20,6 +21,11 @@
               <a href="text_elements.html">Text Elements</a>
               <a href="interactive_elements.html">Interactive Elements</a>
             </nav>
+            <div class="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
         </header>
 
         <section>
@@ -43,13 +49,14 @@
                 <div class="productimage">
                     <img src="images/hennifer.png" alt="a polite brown hen" width="100%">
                 </div>
-                <h3>Hennifer</h3>
-                <h4><span>Fancy Brown</span></h4>
+                <p class="productName">Hennifer<img src="images/female.png" alt="female symbol" width=10%></p>
+                
+                <p class="categoryLabel"><span>Fancy Brown</span></p>
                 <div class="priceandcart">
-                    <h3>$24.99</h3>
+                    <p class="productPrice">$24.99</p>
                     <a class="buttonsecondary" href="example_listing.html">Learn More</a>
                 </div>
-            </div>
+              </div>
             </section>
       
             <section>
@@ -185,5 +192,12 @@
               </div>
             </section>
       
-          </section>
+            </section>
+            <footer>
+              <p class="footerTitle">PoultryPal Style Guide</p>
+              <a href="index.html" class="styleGuideLink">Return to our main site</a>
+            </footer>
+    
+            <script src="js/hamburger.js"></script>
+    </body>
 </html>
