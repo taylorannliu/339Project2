@@ -83,3 +83,7 @@
 .yourFeedbackLabel {
     width: 100%;
 }
+
+legend > img {
+    align-items: center;
+}

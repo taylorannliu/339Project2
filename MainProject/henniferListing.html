@@ -25,6 +25,12 @@
               <a href="eggs.html">Eggs</a>
               <a class= "selectednav" href= "live poultry.html">Live Poultry</a>
             </nav>
+
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </header>
 
         <section >
@@ -91,7 +97,7 @@
         <section>
             <h2>Write a Review</h2>
             <form>
-                <legend>How would you rate this purchase?</legend>
+                <legend>How would you rate this purchase? <img src="images/blankStars.png" alt="star rating slots" width="20%"> </legend>
                 <fieldset>
                     <label>
                         Name
@@ -112,6 +118,21 @@
                 <input class= "buttonmain" type="submit" value="Submit Review">
             </form>
         </section>
+
+        <footer>
+            <p class="footerTitle">Thank you for visiting PoultryPal</p>
+            <a class="styleGuideLink">Check out our Style Guide</a>
+        </footer>
+
+        <!-- I used this tutorial to learn how to do the javascript for a hamburger memu:
+        https://www.youtube.com/watch?v=dIFNHeHTja0 -->
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            nav = document.querySelector(".navchild");
+            hamburger.onclick = function() {
+                nav.classList.toggle("active");
+            }
+        </script>
 
     </body>
 
