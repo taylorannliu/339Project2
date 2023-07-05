@@ -7,14 +7,73 @@ body {
     font-family: 'AnonymousPro', monospace;
     font-size: 1em;
     background-color: #FFDB58;
-    padding: 2rem 0 0 0;
+    padding: 2rem 4rem 2rem 4rem;
 }
 
 section {
-    margin: 1rem 10% 4rem;
+    margin: 1rem 8% 4rem;
+}
+
+/* header and navigation related */
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 3rem;
+}
+
+.headingchild {
+    flex: 1;
+    font-size: 2.5rem;
+    -webkit-text-stroke-width: .13rem;
+    margin-top: 0;
+}
+
+.navchild {
+    flex: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+/*media query code learned from: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+@media only screen and (max-width: 1420px) {
+    .navchild {
+        flex-direction: column-reverse;
+        align-items: end;
+    }
+}
+
+.navchild > a{
+    float: right;
+}
+
+nav > a {
+    margin-left: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    border-radius: 5rem;
+    border-width: .15rem;
+}
+
+nav > a:hover:not(.selectednav), nav > a:focus:not(.selectednav), nav > a:active:not(.selectednav) {
+    color: #EC5454;
+    transition: color 0.3s ease-in;
+}
+
+.selectednav {
+    background-color: #EC5454;
+    color: #FFF;
 }
 
 
+
+/* text elements */
 h1 {
     font-family: 'Poppins', sans-serif;
     color: #FFF;
@@ -25,10 +84,8 @@ h1 {
 
 h2 {
     font-family: 'Poppins', sans-serif;
-    color: #FFF;
-    font-weight: 900;
-    -webkit-text-stroke: #000;
-    -webkit-text-stroke-width: .09rem;
+    color: #EC5454;
+    font-weight: bold
 }
 
 h3 {
@@ -80,7 +137,6 @@ h4 {
     border-color: #000;
     border-width: 0.14rem;
     padding: .5rem 2rem .5rem 2rem;
-    text-decoration: none;
 }
 
 .buttonsecondary {
@@ -215,12 +271,7 @@ legend{
 }
 
 /*span styling reference: https://stackoverflow.com/questions/14310154/how-do-i-set-a-background-color-for-the-width-of-text-not-the-width-of-the-enti*/
-
-.categoryLabel{
-    font-weight: bold;
-}
-
-.categoryLabel > span {
+.product > h4 > span {
     background-color: #AAD6FF;
     border-radius: 2rem;
     padding: .3rem .6rem;
@@ -240,53 +291,10 @@ legend{
     border-width: .2rem;
 }
 
-.productName {
-    font-family: 'Poppins';
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.productName > img{
+h3 > img {
     vertical-align: middle;
 }
 
 a > input {
     line-height: 1em;
-}
-
-.productPrice {
-    font-family: 'Poppins';
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-footer {
-    background-color: #EC5454;
-    padding-top: 4rem;
-    padding-bottom: 6rem;
-    margin: 0;
-    text-align: center;
-}
-
-.footerTitle{
-    font-family: 'Poppins', sans-serif;
-    color: #FFF;
-    font-weight: 900;
-    -webkit-text-stroke: #000;
-    -webkit-text-stroke-width: .1rem;
-    font-size: 2rem;
-    text-decoration: none;
-}
-
-.styleGuideLink {
-    font-family: 'Poppins', sans-serif;
-    color:#FFDB58;
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration: none;
-}
-
-.styleGuideLink:hover, .styleGuideLink:focus, .styleGuideLink:active {
-    color: #FFF;
-    transition: color 0.3s ease-in;
 }
