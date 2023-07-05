@@ -24,6 +24,12 @@
               <a href="eggs.html">Eggs</a>
               <a href="live poultry.html">Live Poultry</a>
             </nav>
+
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </header>
 
         <section>
@@ -88,6 +94,16 @@
             </div>
 
         </section>   
+
+        <!-- I used this tutorial to learn how to do the javascript for a hamburger memu:
+        https://www.youtube.com/watch?v=dIFNHeHTja0 -->
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            nav = document.querySelector(".navchild");
+            hamburger.onclick = function() {
+                nav.classList.toggle("active");
+            }
+        </script>
     </body>
 
 

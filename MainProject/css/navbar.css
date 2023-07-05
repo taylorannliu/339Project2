@@ -4,6 +4,8 @@ header {
     flex-wrap: nowrap;
     flex-direction: row;
     margin-bottom: 3rem;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 header > a {
@@ -11,6 +13,7 @@ header > a {
 }
 
 .headingchild {
+    align-self: center;
     flex: 1;
     font-size: 2.5rem;
     -webkit-text-stroke-width: .13rem;
@@ -77,10 +80,25 @@ nav > a:hover:not(.selectednav), nav > a:focus:not(.selectednav), nav > a:active
     }
 }
 
+.hamburger div{
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.hamburger {
+    align-self: center;
+    display: none;
+    background-color: #EC5454;
+    border-radius: 100%;
+    padding: 7px 10px;
+}
+
 @media only screen and (max-width: 775px) {
     .navchild {
-        flex-direction: column-reverse;
-        align-items: end;
+        display: none;
     }
 
     .headingchild {
@@ -90,4 +108,41 @@ nav > a:hover:not(.selectednav), nav > a:focus:not(.selectednav), nav > a:active
     .navchild {
         flex: 6;
     }
+
+    .hamburger {
+        display: block;
+        align-self: baseline;
+        position: fixed;
+        right: 5%;
+    }
+
+    .navchild.active {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: end;
+        position: fixed;
+        right: 5%;
+        padding-top: 2.5rem;
+        padding-left: 4rem;
+        background-color: #EC5454;
+        border-radius: .5rem;
+    }
+
+    nav > a {
+        font-size: 1rem;
+    }
+
+    .selectednav {
+        color: #FFF;
+    }
+
+    nav > a:hover:not(.selectednav), nav > a:focus:not(.selectednav), nav > a:active:not(.selectednav) {
+        color: #FFF;
+        transition: color 0.3s ease-in;
+    }
 }
+
+
+
+
+
