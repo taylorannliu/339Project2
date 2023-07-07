@@ -39,6 +39,15 @@ h4 {
     font-weight: bold;
 }
 
+ul {
+    max-width: 100vw;
+}
+
+li {
+    padding: .25rem;
+    max-width: 100vw;
+}
+
 .bodyexample {
     font-size: 1.5rem;
     margin-bottom: 1rem;
