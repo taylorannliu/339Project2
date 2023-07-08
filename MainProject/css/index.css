@@ -1,12 +1,13 @@
 .home {
     background-color: #FFF;
     padding: 1rem;
-    width: 80%;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-right: 0;
     border-style: solid;
     border-color: #000;
     border-width: .2rem;
-    margin-bottom: 2rem;
-    margin-right: 0;
 }
 
 .homeImg > img {
