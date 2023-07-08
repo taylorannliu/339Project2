@@ -34,47 +34,64 @@
         </header>
 
         <section>
-            <div class="contact">
-            <h1>Contact</h1>
-            <p>Get in touch with us about any inquiries, questions, or concerns.</p>
-                <!--form code reference: https://learn.shayhowe.com/html-css/building-forms/-->
+            <div class="container_form">
+                <h1>Contact</h1>
                 <form>
-                    <fieldset> <!-- code referenced: https://html5-tutorial.net/forms/fieldset/-->
-                    <label>
-                        First Name
-                        <input type="text" id="firstname">
-                    </label>
+                    <legend>Get in touch with us about any inquiries, questions, or concerns.</legend>
                     <br>
-                    <label>
-                        Last Name
-                        <input type="text" id="lastname">
-                    </label>
-                    <br>
-                    <label>
-                        Email Address
-                        <input type="text" id="email">
-                    </label>
-                    <br>
-                    <label>
-                        Message
-                        <textarea type="text" id="message" class=""></textarea>
-                    </label>
-                    <br>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="finame">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="finame" name="firstname">
+                        </div>
+                    </div>
 
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="laname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="laname" name="lastname">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="emailad">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="emailad" name="email">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="msg">Message</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="msg" name="message" style="height: 200px;"></textarea>
+                        </div>
+                    </div>
                     <br>
-                    <input class= "buttonmain" type="submit" value="Submit">
+                    <div class="row">
+                        <input class= "buttonmain" type="submit" value="Submit Message">
+                      </div>
+
                 </form>
-            </section>  
             </div>
+        </section>
 
-            <footer>
-                <p class="footerTitle">Thank you for visiting PoultryPal</p>
-                <p><a href="interactive_elements.html" class="styleGuideLink">Check out our Style Guide</a></p>
-                <p><a href="citations.html" class="styleGuideLink">Citations</a></p>
-            </footer>
-            
-            <script src="js/hamburger.js"></script>
+        <footer>
+            <p class="footerTitle">Thank you for visiting PoultryPal</p>
+            <p><a href="interactive_elements.html" class="styleGuideLink">Check out our Style Guide</a></p>
+            <p><a href="citations.html" class="styleGuideLink">Citations</a></p>
+        </footer>
+        
+        <script src="js/hamburger.js"></script>
     </body>
 
 
 </html>
+
