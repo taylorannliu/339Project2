@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Interactive Elements</title>
+
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="./css/navbar.css" rel="stylesheet">
+        <link href="./css/fonts.css" rel="stylesheet">
+        <link href="./css/normalize.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="headingchild">PoultryPal Style Guide</h1>
+
+            <nav class="navchild">
+                <a href="products_page.html">Product Listings</a>
+                <a href="combined_elements.html">Combined Elements</a>
+                <a href="text_elements.html">Text Elements</a>
+                <a class = selectednav href="interactive_elements.html">Interactive Elements</a>
+            </nav>
+
+            <div class="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+        </header>
+
+        <section>
+
+            <section>
+      
+              <h1>Navigation Button</h1>
+              <nav>
+                <a href="#checkout">Go to Cart</a>
+              </nav>
+      
+            </section>
+      
+            <section>
+              <h1>In-text link</h1>
+              <p>As you can see here, <a class = hyperlink href="https://cf.ltkcdn.net/birds/bird-names/images/orig/324569-1600x1066-budgie-names.jpg">This is an in-text link</a> that will take you outside of this site </p>
+            </section>
+      
+            <section>
+              <h1>Image as link</h1>
+              <!-- reference: https://www.w3schools.com/tags/tag_img.asp-->
+              <a class="image-link" href="https://treatsforchickens.com/blogs/treats-for-chickens-blog/5-best-white-egg-laying-chicken-breeds-treats-for-chickens">
+                <img src="https://cdn.shopify.com/s/files/1/0113/5309/6250/files/keep_1_L_Chicken_480x480.png" alt="image of a white chicken" max-width="30%">
+              </a>
+              <!--image source: https://cdn.shopify.com/s/files/1/0113/5309/6250/files/keep_1_L_Chicken_480x480.png?v=1652304103-->
+            </section>
+      
+            <section>
+              <h1>Submit/Reset Buttons</h1>
+              <!--code referenced: https://html5-tutorial.net/forms/submit-reset-buttons/-->
+              <p>Submit and reset buttons can be used for various forms on the site for ordering chickens or eggs.</p>
+              <input class = "buttonmain" type="submit" value="SUBMIT">
+              <input class = "buttonsecondary" type="reset" value="Reset">
+            </section>
+      
+            <section>
+              <h1>Inputs</h1>
+              <fieldset>
+                <legend>Text Input</legend>
+                <label>
+                    Fist Name:
+                    <input type="text" id="firstname">
+                </label>
+                <br>
+
+                <!--code referenced: https://www.w3schools.com/tags/att_input_type_radio.asp-->
+              </fieldset>
+              <br>
+              <fieldset>
+                <legend>Radio Buttons</legend>
+                <label class= "radiolabel">
+                    Yes
+                    <input type="radio" id="choice1">
+                </label>
+                <br>
+                <label class= "radiolabel">
+                    No
+                    <input type="radio" id="choice2">
+                </label>
+              </fieldset>
+            </section>
+      
+          </section>
+          
+          <footer>
+            <p class="footerTitle">Thank you for visiting PoultryPal</p>
+            <p><a href="interactive_elements.html" class="styleGuideLink">Check out our Style Guide</a></p>
+            <p><a href="citations.html" class="styleGuideLink">Citations</a></p>
+          </footer>
+
+        <script src="js/hamburger.js"></script>
+
+    </body>
+</html>

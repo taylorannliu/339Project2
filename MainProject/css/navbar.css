@@ -1,0 +1,148 @@
+/* header and navigation related */
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+header > a {
+    text-decoration: none;
+}
+
+.headingchild {
+    align-self: center;
+    flex: 1;
+    font-size: 2.5rem;
+    -webkit-text-stroke-width: .13rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.headingchild > a {
+    text-decoration: none;
+    color: #FFF;
+    -webkit-text-stroke: #000;
+    -webkit-text-stroke-width: .13rem;
+    vertical-align: middle;
+}
+
+.navchild {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+nav > a {
+    margin-left: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    border-radius: 5rem;
+    border-width: .15rem;
+}
+
+nav > a:hover:not(.selectednav), nav > a:focus:not(.selectednav), nav > a:active:not(.selectednav) {
+    color: #EC5454;
+    transition: color 0.3s ease-in;
+}
+
+.selectednav {
+    background-color: #EC5454;
+    color: #FFF;
+}
+
+.cartSpanSelected {
+    background-color: #EC5454;
+    border-radius: 5rem;
+    padding: .08rem 1rem;
+    align-items: center;
+    display: block;
+}
+
+/*media query code learned from: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+@media only screen and (max-width: 980px) {
+    .headingchild > a {
+        font-size: 1.6rem;
+        -webkit-text-stroke-width: .1rem;
+    }
+
+    nav > a {
+        font-size: .8rem;
+        margin-left: 0;
+    }
+}
+
+.hamburger div{
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.hamburger {
+    align-self: center;
+    display: none;
+    background-color: #EC5454;
+    border-radius: 100%;
+    padding: 7px 10px;
+}
+
+@media only screen and (max-width: 775px) {
+    .navchild {
+        display: none;
+    }
+
+    .headingchild {
+        flex: 1;
+    }
+
+    .navchild {
+        flex: 6;
+    }
+
+    .hamburger {
+        display: block;
+        align-self: baseline;
+        position: fixed;
+        right: 5%;
+    }
+
+    .navchild.active {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: end;
+        position: fixed;
+        right: 5%;
+        padding-top: 2.5rem;
+        padding-left: 4rem;
+        background-color: #EC5454;
+        border-radius: .5rem;
+    }
+
+    nav > a {
+        font-size: 1rem;
+    }
+
+    .selectednav {
+        color: #FFF;
+    }
+
+    nav > a:hover:not(.selectednav), nav > a:focus:not(.selectednav), nav > a:active:not(.selectednav) {
+        color: #FFF;
+        transition: color 0.3s ease-in;
+    }
+}
+
+
+
+
+

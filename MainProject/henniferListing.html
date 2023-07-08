@@ -3,13 +3,15 @@
 
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Hennifer</title>
 
-        <link href="style.css" rel="stylesheet">
-        <link href="fonts.css" rel="stylesheet">
-        <link href="normalize.css" rel="stylesheet">
-        <link href="listing.css" rel="stylesheet">
-        <link href="navbar.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="./css/fonts.css" rel="stylesheet">
+        <link href="./css/normalize.css" rel="stylesheet">
+        <link href="./css/listing.css" rel="stylesheet">
+        <link href="./css/contact.css" rel="stylesheet">
+        <link href="./css/navbar.css" rel="stylesheet">
     </head>
 
     <body>
@@ -24,6 +26,12 @@
               <a href="eggs.html">Eggs</a>
               <a class= "selectednav" href= "live poultry.html">Live Poultry</a>
             </nav>
+
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </header>
 
         <section >
@@ -39,12 +47,13 @@
                 <div class="listingInfo">
                     <div class="listingInfoCluster">
                         <h1>Hennifer</h1>
-                        <h4><span class="chickenBreed">Fancy Brown</span></h4>
+                        <p class="categoryLabel"><span>Fancy Brown</span></p>
                         <p>A delightful, brown hen, Hennifer enjoys cornmeal, siestas, and belly scritches. She loves humans but does not get along with dogs.</p>
                         <p>Hennifer is a social chicken who needs to live among at least two other friends to thrive. Her preferred enclosure type is a large coop with plenty of nesting space.</p>
                     </div>
 
                     <div class="listingInfoCluster">
+                        <h2>Details</h2>
                         <h3>Feeding Schedule</h3>
                         <p>Once a day, 100g of neutral bird feed.</p>
                         <h3>Ideal Temperature</h3>
@@ -54,7 +63,7 @@
                     </div>
 
                     <div class="listingInfoCluster">
-                        <h1>$24.99</h1>
+                        <p class="listingPagePrice">$24.99</p>
                         <a class="buttonmain" href="cart.html">Take Me Home!  </a>
                     </div>
 
@@ -64,10 +73,10 @@
 
         </section>
         <section>
-            <h1>Reviews for Fancy Brown Chickens</h1>
+            <h2>Reviews for Fancy Brown Chickens</h2>
             <div class="reviewSection">
                 <div class="reviewText">
-                    <h2>Best. Chicken. Ever!!!<img src="images/5 stars.png" alt="5 star review" width="90vw"></h2>
+                    <h3>Best. Chicken. Ever!!!<img src="images/5stars.png" alt="5 star review" width="100vw"></h3>
                     <p>This chicken is my new best friend. 10/10, changed my life for the better. My skin is clear, my crops are watered and im now debt free because of my new Fancy Brown hen.</p>
                 </div>
                 <div class="reviewInfo">
@@ -77,7 +86,7 @@
             </div>
             <div class="reviewSection">
                 <div class="reviewText">
-                    <h2>Pretty great, but could be fluffier<img src="images/4 stars.png" alt="5 star review" width="90vw"></h2>
+                    <h3>Pretty great, but could be fluffier<img src="images/4stars.png" alt="5 star review" width="100vw"></h3>
                     <p>Overall, I’m quite pleased with this chicken. It is a nice colour and has a very calm temperament. The egg yield listed is accurate too. My main issue is with its coat. In the picture, this hen is extremely fluffy and full-looking, but the chicken I received does not have anywhere near as many feathers. This isn’t the biggest deal to me, but I just wanted to let anyone know if they want this kind of chicken for their coat.</p>
                 </div>
                 <div class="reviewInfo">
@@ -87,9 +96,9 @@
             </div>
         </section>
         <section>
-            <h1>Write a Review</h1>
+            <h2>Write a Review</h2>
             <form>
-                <legend>How would you rate this purchase?</legend>
+                <legend>How would you rate this purchase? <img src="images/blankStars.png" alt="star rating slots" width="20%"> </legend>
                 <fieldset>
                     <label>
                         Name
@@ -110,6 +119,14 @@
                 <input class= "buttonmain" type="submit" value="Submit Review">
             </form>
         </section>
+
+        <footer>
+            <p class="footerTitle">Thank you for visiting PoultryPal</p>
+            <p><a href="interactive_elements.html" class="styleGuideLink">Check out our Style Guide</a></p>
+            <p><a href="citations.html" class="styleGuideLink">Citations</a></p>
+        </footer>
+
+        <script src="js/hamburger.js"></script>
 
     </body>
 
