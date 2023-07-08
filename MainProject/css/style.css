@@ -39,13 +39,9 @@ h4 {
     font-weight: bold;
 }
 
-ul {
-    max-width: 100vw;
-}
-
 li {
     padding: .25rem;
-    max-width: 100vw;
+    word-wrap: break-word;
 }
 
 .bodyexample {
