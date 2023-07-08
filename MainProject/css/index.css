@@ -1,0 +1,31 @@
+.home {
+    background-color: #FFF;
+    padding: 1rem;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-right: 0;
+    border-style: solid;
+    border-color: #000;
+    border-width: .2rem;
+}
+
+.homeImg > img {
+    border-style: solid;
+    border-color: #000;
+    border-width: .2rem;
+}
+
+/*
+@media screen and (max-width: 1200px) {
+    .home {
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width: 1018px) {
+    .home {
+        width: 42rem;
+    }
+}
+*/

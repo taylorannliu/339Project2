@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
         <meta charset="utf-8">
-        <title>About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Checkout</title>
 
-        <link href="style.css" rel="stylesheet">
-        <link href="fonts.css" rel="stylesheet">
-        <link href="normalize.css" rel="stylesheet">
-        <link href="navbar.css" rel="stylesheet">
-        <link href="contact.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="./css/fonts.css" rel="stylesheet">
+        <link href="./css/normalize.css" rel="stylesheet">
+        <link href="./css/navbar.css" rel="stylesheet">
+        <link href="./css/contact.css" rel="stylesheet">
     </head>
 
     <body>
@@ -24,16 +25,23 @@
                 <a href="eggs.html">Eggs</a>
                 <a href="live poultry.html">Live Poultry</a>
             </nav>
+
+            <div class="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
         </header>
 
-        <section>
+        <!-- <section>
             <div class="Payment">
-                <!--form code reference: https://learn.shayhowe.com/html-css/building-forms/-->
+                form code reference: https://learn.shayhowe.com/html-css/building-forms/
+                form code reference: from W3Schools "How TO - Responsive Form" https://www.w3schools.com/howto/howto_css_responsive_form.asp 
                 <section>
                     <h1>Payment Form</h1>
-                    <!--form code reference: https://learn.shayhowe.com/html-css/building-forms/-->
+                    form code reference: https://learn.shayhowe.com/html-css/building-forms/
                     <form>
-                      <fieldset> <!-- code referenced: https://html5-tutorial.net/forms/fieldset/-->
+                      <fieldset> code referenced: https://html5-tutorial.net/forms/fieldset/
                         <legend>Order Details</legend>
                         <p>How would you like to receive your order?</p>
                         
@@ -72,7 +80,7 @@
                         <br>
                         <label>
                           Province
-                          <!--dropdown code reference: https://www.w3schools.com/tags/tag_select.asp -->
+                          dropdown code reference: https://www.w3schools.com/tags/tag_select.asp -
                           <select id="province">
                             <option value="AB">AB</option>
                             <option value="AB">BC</option>
@@ -130,10 +138,181 @@
                     </form>
             
                   </section>
-            </section>  
             </div>
-
+            </section>   -->
             
+            <section>
+              <div class="container_form">
+                <h1>Payment Form</h1>
+                <!--form code reference: https://learn.shayhowe.com/html-css/building-forms/-->
+                <form>
+                  <fieldset><<!--  code referenced: https://html5-tutorial.net/forms/fieldset/ -->
+                    <legend>Order Details</legend>
+                    <p>How would you like to receive your order?</p>
+                    
+                    <div class="row">
+                        <label class = radiolabel>
+                          Home Delivery
+                          <input type="radio" id="delivery">
+                        </label>
+                        <label class = radiolabel>
+                          In-store pickup
+                          <input type="radio" id="pickup">
+                        </label>
+                        <label class = radiolabel>
+                          In-store pickup
+                          <input type="radio" id="pickup">
+                        </label>
+                    </div>
+                  </fieldset>
+                  <br>
+
+                  <fieldset>
+                    <legend>Customer Details</legend>
+                    <div class="row">
+                      <div class="col-25">
+                          <label for="finame">First Name</label>
+                      </div>
+                      <div class="col-75">
+                          <input type="text" id="finame" name="firstname">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="laname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="laname" name="lastname">
+                        </div>
+                    </div>
+
+                  
+                    <div class="row">
+                      <div class="col-25">
+                          <label for="streetname">Street Name</label>
+                      </div>
+                      <div class="col-75">
+                          <input type="text" id="streetname" name="streetname">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-25">
+                          <label for="cityname">City
+                          </label>
+                      </div>
+
+                      <div class="col-75">
+                          <input type="text" id="citytname" name="cityname">
+                      </div>
+                    </div>
+
+                      <br>
+                    <div class="row"> 
+                      <div class="col-25">
+                        <label for="prov">Province
+                        </label>
+                      </div>
+                      
+                      <div class="col-75">
+                        <!--dropdown code reference: https://www.w3schools.com/tags/tag_select.asp -->
+                        <select id="province">
+                          <option value="AB">AB</option>
+                          <option value="AB">BC</option>
+                          <option value="AB">MB</option>
+                          <option value="AB">NB</option>
+                          <option value="AB">NL</option>
+                          <option value="AB">NT</option>
+                          <option value="AB">NS</option>
+                          <option value="AB">NU</option>
+                          <option value="AB">ON</option>
+                          <option value="AB">PE</option>
+                          <option value="AB">QC</option>
+                          <option value="AB">SK</option>
+                          <option value="AB">YT</option>
+                        </select>
+                      </div>
+                      
+                    </div>
+
+                    <br>
+                    <div class="row">
+                      <div class="col-25">
+                          <label for="postalCode">Postal Code</label>
+                      </div>
+                      <div class="col-75">
+                          <input type="text" id="postalCode" name="postalCode">
+                      </div>
+                    </div>
+                  </fieldset> 
+          
+                  <fieldset>
+                    <legend>Payment Details</legend>
+                    <div class="row">
+                      <div class="col-25">
+                          <label for="finame">First Name</label>
+                      </div>
+                      <div class="col-75">
+                          <input type="text" id="finame" name="firstname">
+                      </div>
+                    </div>
+
+                    <div class="row"> 
+                        <div class="col-25">
+                            <label for="laname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="laname" name="lastname">
+                        </div>
+                    </div>
+                      <br>
+                    <div class="row">
+                      <div class="col-25">
+                          <label for="card">Card Number</label>
+                      </div>
+                      <div class="col-75">
+                          <input type="text" id="card" name="card">
+                      </div>
+                    </div>
+
+                    <div class="row"> 
+                      <div class="col-25">
+                          <label for="exdate">Expiry Date</label>
+                      </div>
+                      <div class="col-75">
+                          <input type="text" id="exdate" name="expirydate">
+                      </div>
+                    </div>
+                    <br>
+
+                    <div class="row"> 
+                      <div class="col-25">
+                          <label for="cvv">CVV</label>
+                      </div>
+                      <div class="col-75">
+                          <input type="text" id="cvv" name="cvv">
+                      </div>
+                    </div>
+                    
+                      
+                  </fieldset>
+  
+                  <br>
+                  <input class= "buttonmain" type="submit" value="Place Order">
+                </form>
+              
+                    
+              </div>
+            </section>  
+
+            <footer>
+              <p class="footerTitle">Thank you for visiting PoultryPal</p>
+              <p><a href="interactive_elements.html" class="styleGuideLink">Check out our Style Guide</a></p>
+              <p><a href="citations.html" class="styleGuideLink">Citations</a></p>
+          </footer>
+
+            <script src="js/hamburger.js"></script>
 
     </body>
 

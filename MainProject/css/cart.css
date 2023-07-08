@@ -1,0 +1,51 @@
+.listingscontainerincart { /* for product listings on cart page*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.listingInfoCluster {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 2rem 4rem 2rem 4rem;
+    margin: 0.5rem;
+}
+
+.totalprice{
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    -webkit-text-stroke: #000;
+    -webkit-text-stroke-width: .1rem;
+    /* background-color: #EC5454;
+    color: #FFF;
+    border-radius: 5rem;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0.14rem; */
+    padding: .5rem 2rem .5rem 2rem;
+}
+
+@media screen and (min-width:1200px){
+    .listingscontainerincart{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .listingInfoCluster {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+        padding: 2rem 4rem 2rem 0rem;
+        margin: 0.5rem;
+    }
+
+
+}
