@@ -8,7 +8,7 @@ textarea:hover, textarea:focus, textarea:active {
     background-color: #AAD6FF;
 }
 
-
+/* CSS code referenced from W3Schools "How TO - Responsive Form" https://www.w3schools.com/howto/howto_css_responsive_form.asp */
 .contact_form {
     width:100%
 }
